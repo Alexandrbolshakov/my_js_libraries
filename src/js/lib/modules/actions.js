@@ -24,7 +24,7 @@ $.prototype.eq = function(i){
 }
 
 $.prototype.index = function(){
-    const parent = this.parentNode;
+    const parent = this[0].parentNode;
     const childs = [...parent.children];
 
     const findMyIndex = (item) => {
